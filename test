@@ -1,2 +1,24 @@
+Git Repository
+
+https://github.com/karmaggyatso/1974254_karmaGyatso_TCSMEANStackTraining.git
+
+**********************************************************************************
+
+Details: 
+
 Name: Karma Gyatso
 empID: 1974254
+
+
+**********************************************************************************
+
+Process
+
+1. git init
+2. git add .
+3. git commit -m "File submission"
+4. git remote add origin https://github.com/karmaggyatso/1974254_karmaGyatso_TCSMEANStackTraining.git
+5. git push -u origin HEAD
+
+
+.gitignore file was created and inside the file, readMe.txt is entered so that github will push every file except readMe.txt
