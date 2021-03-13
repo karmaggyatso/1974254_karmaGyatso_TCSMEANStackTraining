@@ -1,0 +1,35 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px;
+}
+
+.homePage{ 
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 4rem;
+    margin: 20px auto;
+    border: dotted 4px black;
+    color: blue;
+    font-weight:bold;
+}
+
+.programMan{
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.finTeam{
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+
+
