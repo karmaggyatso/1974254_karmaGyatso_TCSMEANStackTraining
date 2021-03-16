@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.main{
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: dotted 2px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin: 4px 0; 
+    padding: 8px 8px;
+    box-sizing: border-box; 
+}
+
+
+
+
+
