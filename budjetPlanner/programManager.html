@@ -14,7 +14,7 @@
     <div class="main">
         <h2>Add New Budjet</h2>
 
-        <form action="" method="GET" class="form">
+        <form class="form">
             <label>Client Name</label> <br/>
             <input type="text" id="clientName" /> <br/>
             <label>Project Name</label> <br/>
@@ -22,11 +22,12 @@
             <label>Budjet</label> <br/>
             <input type="text" id="budjet" /><br/>
 
-            <input type="submit" value="Submit" onclick="onFormSubmit()" />
-            <input type="button"  value="Reset" onclick="" />
-
+            <input type="button" value="Submit" onclick="onFormSubmit()" />
+            <input type="reset"  value="Reset"  />
+            
+            <a href="index.html" id="back" onclick="storeInSession()">Back</a>
         </form>
-        <a href="index.html" id="back" onclick="onBackButton()">Back</a>
+        
     </div>
     
 </body>

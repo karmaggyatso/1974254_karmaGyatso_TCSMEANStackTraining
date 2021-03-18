@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/financialTeam.css">
-    <script src="./js/budjet.js"></script>
+    <script src="./js/financialTeam.js"></script>
 </head>
-<body>
+<body onload="retrieveFromSession()">
     <h2>Finance Team</h2>
-    <div id="budjetPlanner" onload="insertDataToTable()">
-        <thead>
-            <tr>
-                <th>Client Name</th>
-                <th>Project Name</th>
-                <th>budjet</th>
-            </tr>
-        </thead>
+    <div id="budjetPlanner">
+        <table >
+            <thead>
+                <tr>
+                    <th>Client Name</th>
+                    <th>Project Name</th>
+                    <th>budjet</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            {}
-        </tbody>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <input type="button" onclick="retrieveFromSession()" value="retrieve"/>
     </div>
 </body>
 </html>

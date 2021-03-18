@@ -1,0 +1,11 @@
+header {
+    margin: 30px;
+    text-align: center;
+}
+
+.btnClass {
+
+    margin: 10px auto;
+    right: 50%;
+    left: 50%;
+}
