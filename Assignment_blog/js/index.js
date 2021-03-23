@@ -32,7 +32,8 @@ function readMeData() {
 
     inputData.title = document.getElementById("title").value;
     inputData.article = document.getElementById("article").value;
-    inputData.image = document.getElementById("uploadImage").files[0].src;
+    // inputData.
+    image = document.getElementById("uploadImage").src;
 
     console.log("Testing image path")
     console.log(inputData.image);
