@@ -1,0 +1,49 @@
+<div class="container d-flex justify-content-center mt-5">
+  <div class="w-50">
+    <h2 class="bg-info text-white d-flex justify-content-center rounded mr-5">
+      My Portfolio
+    </h2>
+
+    <form class="form-group" [formGroup]="portfolioRef" (ngSubmit)="onSave()">
+      <label>Contact Name</label>
+      <input type="text" formControlName="contactName" class="form-control" />
+      <br />
+
+      <label>Phone Numer</label>
+      <input type="text" formControlName="phoneNumber" class="form-control" />
+      <br />
+
+      <input
+        type="submit"
+        value="Save"
+        class="btn btn-outline-info btn-block"
+      />
+    </form>
+
+    <hr />
+
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Contact Number</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let port of portfolioDetails">
+          <td>{{ port.contactName }}</td>
+          <td>{{ port.phoneNumber }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <input
+    class="btn btn-outline-info"
+    type="button"
+    (click)="logout()"
+    value="logout"
+    style="height: 40px"
+  />
+</div>
