@@ -1,10 +1,10 @@
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready);
-}
-else {
+} else {
     ready();
 }
 var cartObj = [];
+
 function ready() {
     var addToCartButtons = document.getElementsByClassName("addToBasket");
     for (var i = 0; i < addToCartButtons.length; i++) {
@@ -12,6 +12,7 @@ function ready() {
         button.addEventListener("click", addToCartClicked);
     }
 }
+
 function addToCartClicked(event) {
     var addToCart = {};
     var button = event.target;
@@ -25,15 +26,18 @@ function addToCartClicked(event) {
     retrieveSession();
     //   addItemToCart(title, price, imgSrc);
 }
+
 function sessionInStorage() {
     sessionStorage.setItem("cartList", JSON.stringify(cartObj));
 }
+
 function retrieveSession() {
     var retrieveObj = JSON.parse(sessionStorage.getItem("cartList"));
     console.log("message from retrieve");
     console.log(retrieveObj);
     addItemToCart(retrieveObj);
 }
+
 function addItemToCart(retrieveObj) {
     var displayObjcart = retrieveObj;
     console.log("message from addItemToCart");

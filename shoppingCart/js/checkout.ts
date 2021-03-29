@@ -41,6 +41,12 @@ function addItemToCart(retrieveObj) {
   } while (i <= displayObjcart.length);
   cartItems.appendChild(cartRow);
 
+
+  
+
+
+
+
   // console.log(displayObjcart[0].title);
   // console.log(displayObjcart[0].price);
   // console.log(displayObjcart[0].imgSrc);
