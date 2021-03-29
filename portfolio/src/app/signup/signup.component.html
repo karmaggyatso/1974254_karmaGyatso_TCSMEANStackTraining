@@ -1,0 +1,43 @@
+<div class="container d-flex justify-content-center">
+  <div class="mt-5">
+    <h2>Create a New Account</h2>
+    <hr />
+
+    <div class="mt-4">
+      <form class="form-group" [formGroup]="signUpRef" (ngSubmit)="onSubmit()">
+        <label>User Name</label>
+        <input
+          type="text"
+          placeholder="username"
+          formControlName="userName"
+          class="form-control"
+          ngModel
+          required
+        />
+        <br />
+        <label>password</label>
+        <input
+          type="password"
+          placeholder="enter you last name"
+          formControlName="pass"
+          class="form-control"
+          ngModel
+          required
+        />
+        <br />
+
+        <input
+          class="btn btn-outline-info mr-2 btn-block"
+          type="submit"
+          value="Submit"
+          [disabled]="!signUpRef.valid"
+        />
+        <input
+          class="btn btn-outline-info btn-block"
+          type="reset"
+          value="Clear"
+        />
+      </form>
+    </div>
+  </div>
+</div>
