@@ -1,0 +1,28 @@
+{
+  "todoList": [
+    {
+      "id": "101",
+      "name": "karma",
+      "task": "gyatso",
+      "date": "2021-12-31"
+    },
+    {
+      "id": "102",
+      "name": "gyatso",
+      "task": "kajlfkd",
+      "date": "2021-03-04"
+    },
+    {
+      "id": "103",
+      "name": "john",
+      "task": "laksdfjas",
+      "date": "2021-03-01"
+    },
+    {
+      "id": "104",
+      "name": "katherine",
+      "task": "complete todo list",
+      "date": "2022-12-13"
+    }
+  ]
+}
