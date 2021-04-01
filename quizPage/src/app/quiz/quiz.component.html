@@ -1,8 +1,8 @@
 <div>
   <span>
     <p>{{ currentQuiz + 1 }} of {{ quizObj.length }}</p>
-    <mat-card>
-      <!-- *ngFor="let obj of quizObj" -->
+    <mat-card *ngFor="let obj of quizObj">
+      <!--  -->
       <mat-card-title>
         {{ quizObj[currentQuiz].question }}
       </mat-card-title>
@@ -16,7 +16,12 @@
                 let index = index
               "
             >
-              <input type="radio" name="option" />
+              <input
+                type="radio"
+                name="option"
+                *ngFor="let correctAnswers of quizObj.correctIndex"
+                (change)="recordAns(correctAnswers)"
+              />
               {{ answer }}
             </li>
           </ul>

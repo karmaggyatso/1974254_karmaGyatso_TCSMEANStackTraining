@@ -33,12 +33,8 @@ export class QuizComponent implements OnInit {
   //   this.currentQuiz++;
   // }
 
-  recordAns(correct: boolean) {
-    if (correct) {
-      this.correctAnswers++;
-    } else {
-      this.inCorrectAnswers++;
-    }
+  recordAns(correct: number) {
+    console.log(correct);
   }
 
   counter() {
