@@ -1,0 +1,36 @@
+<div>
+  <span>
+    <p>{{ currentQuiz + 1 }} of {{ quizObj.length }}</p>
+    <mat-card>
+      <!-- *ngFor="let obj of quizObj" -->
+      <mat-card-title>
+        {{ quizObj[currentQuiz].question }}
+      </mat-card-title>
+      <mat-card-content>
+        <label for="">
+          <ul>
+            <li
+              style="list-style: none"
+              *ngFor="
+                let answer of quizObj[currentQuiz].answers;
+                let index = index
+              "
+            >
+              <input type="radio" name="option" />
+              {{ answer }}
+            </li>
+          </ul>
+          <!-- <button ([ngModel])="(previous)" (click)="counter(previous)">
+            previous
+          </button> -->
+          <button (click)="counter()">next</button>
+        </label>
+      </mat-card-content>
+    </mat-card>
+  </span>
+
+  <div>
+    Correct Answer {{ correctAnswers }} | InCorrect Answer:
+    {{ inCorrectAnswers }}
+  </div>
+</div>

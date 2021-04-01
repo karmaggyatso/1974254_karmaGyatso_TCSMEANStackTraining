@@ -1,0 +1,18 @@
+.main {
+    width: 100vw;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
