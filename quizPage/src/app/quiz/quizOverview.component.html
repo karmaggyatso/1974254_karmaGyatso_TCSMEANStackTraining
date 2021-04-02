@@ -1,0 +1,13 @@
+<div>
+  <h1 mat-dialog-title>Your Result</h1>
+  <div mat-dialog-content>
+    <p>Total Correct Answer: {{ data.correctAnswers }}</p>
+    <p>Total Incorrect Answer: {{ data.inCorrectAnswers }}</p>
+  </div>
+
+  <div mat-dialog-actions>
+    <button class="btn btn-primary btn-block" mat-button (click)="onNoClick()">
+      Close
+    </button>
+  </div>
+</div>

@@ -11,10 +11,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, QuizComponent, FrontPageComponent],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -24,7 +29,11 @@ import { MatRadioModule } from '@angular/material/radio';
     MatFormFieldModule,
     MatCheckboxModule,
     MatRadioModule,
+    FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent],
 })
