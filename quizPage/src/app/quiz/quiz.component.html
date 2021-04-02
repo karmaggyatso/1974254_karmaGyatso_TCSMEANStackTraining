@@ -1,41 +1,53 @@
-<div>
-  <span>
-    <p>{{ currentQuiz + 1 }} of {{ quizObj.length }}</p>
-    <mat-card *ngFor="let obj of quizObj">
-      <!--  -->
-      <mat-card-title>
+<div class="mainContainer">
+  <form>
+    <p>{{ currentQuiz + 1 }} of {{ quizObj.length + 1 }}</p>
+    <mat-card class="matCard">
+      <mat-card-title class="cardTile">
         {{ quizObj[currentQuiz].question }}
       </mat-card-title>
-      <mat-card-content>
-        <label for="">
-          <ul>
-            <li
-              style="list-style: none"
-              *ngFor="
-                let answer of quizObj[currentQuiz].answers;
-                let index = index
-              "
-            >
-              <input
-                type="radio"
-                name="option"
-                *ngFor="let correctAnswers of quizObj.correctIndex"
-                (change)="recordAns(correctAnswers)"
-              />
-              {{ answer }}
-            </li>
-          </ul>
-          <!-- <button ([ngModel])="(previous)" (click)="counter(previous)">
-            previous
-          </button> -->
-          <button (click)="counter()">next</button>
-        </label>
+      <mat-card-content class="matCardContent">
+        <ul>
+          <!-- accessing obj with index currentQuiz -->
+          <li
+            style="list-style: none"
+            *ngFor="
+              let answer of quizObj[currentQuiz].answers;
+              let index = index
+            "
+          >
+            <!-- change is checking the value of the correctIndex from the obj and current selected radio -->
+            <input
+              type="radio"
+              name="quizObj[currentQuiz].answers"
+              value="quizObj[currentQuiz].answers"
+              (change)="testAns(quizObj[currentQuiz].correctIndex, index)"
+            />
+
+            {{ answer }}
+          </li>
+        </ul>
+
+        <!-- anyVariable from quiz.component.ts changes if the answer is correct -->
+        <span *ngIf="anyVariable == 1"> Incorrect </span>
+        <span *ngIf="anyVariable == 0"> Correct </span> <br />
+        <div class="container">
+          <!-- previous and next will decrement and increment is .ts file -->
+          <button class="btn btn-primary previous" (click)="previous()">
+            Previous
+          </button>
+          <button class="btn btn-primary" (click)="next()">Next</button>
+        </div>
       </mat-card-content>
     </mat-card>
-  </span>
+    <br />
 
-  <div>
-    Correct Answer {{ correctAnswers }} | InCorrect Answer:
-    {{ inCorrectAnswers }}
-  </div>
+    <!-- displayResult will call. had to use angular dialogue from material -->
+    <button
+      class="btn btn-primary btn-block"
+      type="submit"
+      (click)="displayResult()"
+    >
+      Submit
+    </button>
+  </form>
 </div>

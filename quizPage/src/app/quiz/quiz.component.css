@@ -1,0 +1,41 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 60px;
+}
+
+.matCard {
+    width: 500px;
+    height: 300px;
+}
+
+.cardTile {
+    background-color: azure;
+    line-height: 30px;
+}
+
+.matCardContent {
+    padding: 20px 0;
+}
+
+ul>li{
+    font-size: large;
+    line-height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous {
+    margin-top: 0;
+    width: 90px;
+
+    position: relative;
+
+}
+
+
