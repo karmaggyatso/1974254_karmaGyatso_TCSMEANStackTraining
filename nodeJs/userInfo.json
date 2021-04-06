@@ -1,0 +1,28 @@
+{
+  "userInfo": [
+    {
+      "id": "1",
+      "name": "josh",
+      "salary": "234234",
+      "data": "Mon Apr 05 2021"
+    },
+    {
+      "id": "2",
+      "name": "karma",
+      "salary": "234234",
+      "data": "Mon Apr 05 2021"
+    },
+    {
+      "id": "3",
+      "name": "sam",
+      "salary": "324234",
+      "data": "Mon Apr 05 2021"
+    },
+    {
+      "id": "4",
+      "name": "john",
+      "salary": "234234",
+      "data": "Mon Apr 05 2021"
+    }
+  ]
+}
